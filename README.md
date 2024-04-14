@@ -21,4 +21,8 @@ npm run dev
 
 Puedes descargar la documentación completa en formato PDF [aquí](/public/documentacion.pdf).
 
+## Link de la App
+
+Tambien puse el link de la aplicación en el panel de about, es un vista previa, añade, modifica y elimina los datos, sin embargo todavía no está bien configurada
+
 Este README.md proporciona una visión general de la configuración y la estructura del proyecto, así como instrucciones para instalar dependencias y configurar Tailwind CSS.
