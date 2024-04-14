@@ -19,6 +19,6 @@ npm run dev
 
 ## Descargar el PDF de la documentación
 
-Puedes descargar la documentación completa en formato PDF [aquí](enlace-al-pdf).
+Puedes descargar la documentación completa en formato PDF [aquí](Documentacion y manual.pdf).
 
 Este README.md proporciona una visión general de la configuración y la estructura del proyecto, así como instrucciones para instalar dependencias y configurar Tailwind CSS.
