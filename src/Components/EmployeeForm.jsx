@@ -65,6 +65,18 @@ const EmployeeForm = () => {
     loadEmployee();
   }, [params.id, reset, setValue]);
 
+  const handleDelete = async () => {
+    const accepted = window.confirm("¿Estás seguro de que quieres borrar?");
+    if (accepted) {
+      await deleteEmployee(params.id);
+      toast.success("Empleado eliminado");
+      setTimeout(() => {
+        navigate("/employeeList");
+        window.location.reload(); 
+      }, 500);
+    }
+  };
+
   const onSubmit = handleSubmit(async (data) => {
     try {
       if (params.id) {
@@ -278,17 +290,7 @@ const EmployeeForm = () => {
 
         {params.id && (
           <button
-            onClick={() => {
-              const accepted = window.confirm(
-                "¿Estás seguro de que quieres borrar?"
-              );
-              if (accepted) {
-                deleteEmployee(params.id);
-                toast.success("Empleado eliminado");
-                navigate("/");
-                window.location.reload("/employeeList");
-              }
-            }}
+            onClick={handleDelete}
             className="text-red-500 hover:text-red-700 w-full"
           >
             Eliminar
