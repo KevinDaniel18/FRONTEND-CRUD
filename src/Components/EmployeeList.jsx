@@ -34,7 +34,7 @@ const EmployeeList = () => {
         </List>
       ) : (
         <p className="text-center text-gray-600">
-          No hay empleados para mostrar
+          No hay usuarios para mostrar
         </p>
       )}
     </div>
